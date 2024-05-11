@@ -1,193 +1,231 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <header>
+    <div id="menu">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </div>
+  </header>
+  <body>
+    <section id="main" class="section">
+      <h1>Arnold Schwarzenegger</h1>
+    </section>
+    <section id="about" class="section">
+      <h1>About Me</h1>
+      <p>
+        Arnold Schwarzenegger is an Austrian-American actor, politician, and
+        former professional bodybuilder. He was born on July 30, 1947, in Thal,
+        Austria.
+      </p>
+      <p>
+        Schwarzenegger began weight training at a young age and excelled in
+        bodybuilding competitions. He won the Mr. Universe title at age 20 and
+        went on to win the Mr. Olympia contest seven times, establishing himself
+        as one of the greatest bodybuilders of all time.
+      </p>
+      <p>
+        In the 1980s, Schwarzenegger transitioned to acting and quickly became a
+        Hollywood superstar. He starred in blockbuster films such as "The
+        Terminator," "Predator," and "Total Recall," solidifying his status as
+        an action movie icon.
+      </p>
+      <p>
+        Beyond his successful acting career, Schwarzenegger ventured into
+        politics and served as the Governor of California from 2003 to 2011.
+        During his tenure, he focused on issues such as environmental
+        protection, infrastructure development, and economic reform.
+      </p>
+      <p>
+        Schwarzenegger is also known for his philanthropic work, particularly in
+        the areas of children's health and fitness education. He founded the
+        Arnold Sports Festival, an annual multi-sport event, and has been
+        actively involved in various charitable organizations.
+      </p>
+    </section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="photos" class="section">
+      <div class="full-img" id="fullImgBox">
+        <img src="images/arnold.jpeg" alt="" id="fullImg" />
+        <span onclick="closeFullImg(this.src)">X</span>
+      </div>
+      <div class="img-gallery">
+        <img
+          src="images/arnold-schwarzenegger.jpg"
+          alt=""
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images/GettyImages-115094961-H-2023.webp"
+          alt=""
+          onclick="openFullImg(this.src)"
+        />
+        <img src="images/images.jpeg" alt="" onclick="openFullImg(this.src)" />
+        <img
+          src="images/terminator.webp"
+          alt=""
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images/Total_Recall_a_l.webp"
+          alt=""
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images/Arnold_Schwarzenegger_-_2019_(33730956438)_(cropped).jpg"
+          alt=""
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images/arnold-schwarzenegger-090523-c024a698679644299ec66cd00d08a336.jpg"
+          alt=""
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images/body-builder-actor-and-future-governor-of-california-arnold-news-photo-1686584660.jpg"
+          alt=""
+          onclick="openFullImg(this.src)"
+        />
+      </div>
+    </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="playlist" class="section">
+      <h2>My Playlist</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/0frym-gvrko?si=oTegcpp7sODhLdnV"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="like" class="section">
+      <h2>Give me a like 👍</h2>
+      <div
+        class="fb-like"
+        data-href="https://www.your-domain.com/your-page.html"
+        data-width=""
+        data-layout="standard"
+        data-action="like"
+        data-size="small"
+        data-share="true"
+      ></div>
+    </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="qrcoder" class="section">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      scan my code
+      <br />
+      <br />
+      <br />
+    </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="spa" class="section">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      ans
+      <br />
+      <br />
+      <br />
+    </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="contact" class="section">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      contact me
+      <br />
+      <br />
+      <br />
+    </section>
 
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
-</body>
+    <script type="text/javascript">
+      $(function () {
+        $("#nav a").click(function (e) {
+          e.preventDefault();
+          $("html,body").scrollTo(this.hash, this.hash);
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).scroll(function() {
+         $('#menu').toggle($(this).scrollTop()>1000)
+      });​
+    </script>
+    <script>
+      let fullImgBox = document.getElementById("fullImgBox");
+      let fullImg = document.getElementById("fullImg");
+      function openFullImg(picture) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = picture;
+      }
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+    <head>
+      <!-- Include Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId={your-facebook-app-id}"
+        nonce="FOKrbAYI"
+      ></script>
+    </head>
+  </body>
 </html>

@@ -1,7 +1,127 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+html,
+body {
+  font-family: "Roboto", sans-serif; /* Changed font family */
+  line-height: 1.6; /* Adjusted line-height for better readability */
+  letter-spacing: 0.5px; /* Adjusted letter-spacing for better legibility */
+  margin: 0;
+  padding: 0;
+  background-color: #485563;
+}
+
+#menu {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+#menu li {
+  display: inline;
+  margin-right: 30px;
+  padding: 10px 15px;
+}
+
+#menu a {
+  color: rgb(251, 251, 251);
+  text-decoration: none;
+  font-size: 1.4em;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#menu li a:hover {
+  color: #f7be4c;
+}
+
+.section {
+  padding: 50px;
+  margin-top: 60px;
+  color: #333;
+  text-align: center;
+  font-size: 1.5em;
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+  background-size: 100% 100%;
+  box-shadow: 0 2px 4px rgba(77, 77, 77, 0.5);
+  margin-bottom: 30px;
+}
+
+.section:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.section:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/arnold.jpeg	");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#main h1 {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.img-gallery {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+.img-gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.4;
+}
+
+.img-gallery img:hover {
+  transform: scale(0.8) rotate(-10deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 72px rgba(66, 77, 136, 0.2);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+.full-img img {
+  width: 50%;
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 2em;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+}
+.full-img span:hover {
+  color: rgb(145, 145, 145);
 }
