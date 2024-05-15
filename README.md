@@ -1,7 +1,6 @@
 
 Arnold Schwarzenegger Website
-This is a personal website dedicated to the legendary actor, bodybuilder, and politician, Arnold Schwarzenegger. The website provides an overview of Arnold's life, achievements, and notable works through various sections.
-Features
+This is a personal website dedicated to the legendary actor, bodybuilder, and politician, Arnold Schwarzenegger. The website provides an overview of Arnold's life.
 
 Home Section: The landing page features a full-screen background image of Arnold Schwarzenegger, setting the tone for the website.
 About Me: This section provides a brief biography of Arnold, covering his journey from a bodybuilding champion to a Hollywood superstar and later, his foray into politics as the Governor of California.
@@ -23,10 +22,4 @@ Facebook SDK
 SMTP.js (Email Integration)
 
 Getting Started
-To run the project locally, simply open the index.html file in a web browser. No additional setup is required.
-Contributing
-Contributions to this project are welcome. If you find any issues or have ideas for improvements, please feel free to submit a pull request or open an issue on the project's GitHub repository.
-License
-This project is licensed under the MIT License.
-Acknowledgments
-This website was created as a tribute to the legendary Arnold Schwarzenegger and his remarkable achievements. Special thanks to all the contributors and resources that made this project possible.
+To run the project locally, simply open the https://wed-2023.github.io/316120096/ in a web browser. No additional setup is required.
