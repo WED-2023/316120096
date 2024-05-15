@@ -233,15 +233,17 @@
           toolbar_location: "bottom",
           menubar: false,
         });
-    
+
         function sendEmail() {
           let name = document.getElementById("name").value;
           let email = document.getElementById("email").value;
-          let message = tinymce.activeEditor.getContent();
-    
+          let message = tinymce.get("mytextarea").getContent();
+          let strippedMessage = message.replace(/<[^>]+>/g, '');
+          console.log(strippedMessage)
+
           let mailtoLink = `mailto:omeradaman2@gmail.com?subject=New message from ${name}&body=${encodeURIComponent(
-            message
-          )} from mail ${email}`;
+            strippedMessage
+          )} \n from mail ${email}`;
     
           window.location.href = mailtoLink;
         }
