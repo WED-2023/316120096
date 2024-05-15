@@ -12,6 +12,7 @@
   </head>
   <header>
     <div id="menu">
+      <li><a href="#main">Home</a></li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#photos">My Photos</a></li>
       <li><a href="#playlist">My Playlist</a></li>
@@ -22,6 +23,8 @@
     </div>
   </header>
   <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v19.0" nonce="D8ynjpo4"></script>
     <section id="main" class="section">
       <h1>Arnold Schwarzenegger</h1>
     </section>
@@ -119,37 +122,15 @@
 
     <section id="like" class="section">
       <h2>Give me a like 👍</h2>
-      <div
-        class="fb-like"
-        data-href="https://www.your-domain.com/your-page.html"
-        data-width=""
-        data-layout="standard"
-        data-action="like"
-        data-size="small"
-        data-share="true"
-      ></div>
+      <div class="fb-like" data-href="https://www.facebook.com/arnold" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
     </section>
 
     <section id="qrcoder" class="section">
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      scan my code
-      <br />
-      <br />
+
+<image src ="images/image.png"> 
+</image>
+
       <br />
     </section>
 
@@ -230,45 +211,43 @@
         </article>
       </div>
     </section>
-
     <section id="contact" class="section">
       <h2>Contact Me 📨</h2>
       <div class="container">
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form onsubmit="sendEmail(); this.reset(); return false;">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
           <label for="message">Message:</label>
-          <textarea id="mytextarea" name="message" required></textarea>
+          <textarea id="mytextarea" name="message" ></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
       <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script>
+        tinymce.init({
+          selector: "#mytextarea",
+          plugins: "emoticons",
+          toolbar: "emoticons",
+          toolbar_location: "bottom",
+          menubar: false,
+        });
+    
         function sendEmail() {
           let name = document.getElementById("name").value;
           let email = document.getElementById("email").value;
-          let message = document.getElementById("message").value;
-
+          let message = tinymce.activeEditor.getContent();
+    
           let mailtoLink = `mailto:omeradaman2@gmail.com?subject=New message from ${name}&body=${encodeURIComponent(
             message
-          )}`;
-
-          window.open(mailtoLink);
+          )} from mail ${email}`;
+    
+          window.location.href = mailtoLink;
         }
       </script>
     </section>
-
-    <script>
-      tinymce.init({
-        selector: "#mytextarea",
-        plugins: "emoticons",
-        toolbar: "emoticons",
-        toolbar_location: "bottom",
-        menubar: false,
-      });
-    </script>
+    
     <script type="text/javascript">
       $(function () {
         $("#nav a").click(function (e) {
@@ -294,16 +273,6 @@
       }
     </script>
 
-    <head>
-      <!-- Include Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script
-        async
-        defer
-        crossorigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId={your-facebook-app-id}"
-        nonce="FOKrbAYI"
-      ></script>
-    </head>
+<div id="fb-root"></div>
   </body>
 </html>
